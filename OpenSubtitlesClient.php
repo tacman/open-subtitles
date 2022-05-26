@@ -94,7 +94,7 @@ class OpenSubtitlesClient
      *
      * @throws OpenSubtitlesClientException
      */
-    protected function __construct(array $options)
+    public function __construct(array $options)
     {
         if (!\function_exists('xmlrpc_encode_request')) {
             throw new OpenSubtitlesClientException(OpenSubtitlesClientException::ERR_MISSING_EXTENSION);
